@@ -1,11 +1,11 @@
 {
   "name": "create-cmd",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.2",
+  "description": "Scaffolding Your  Project",
   "main": "bin/create-cmd.mjs",
   "files": [
     "dist",
-    "template-*"
+    "templates"
   ],
   "engines": {
     "node": " >=16.0.0"

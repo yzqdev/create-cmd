@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
 // @ts-check
-import * as fs from "node:fs";
-import * as path from "node:path";
-import { fileURLToPath } from "node:url";
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
 import * as process from "process";
 import minimist from "minimist";
 import prompts from "prompts";
@@ -26,14 +26,14 @@ import {
   pkgFromUserAgent,
   toValidPackageName,
 } from "./utils";
-import { IFramework, Ivariants } from "./interfaces/Icli";
+import {  Framework, PromptResult, Variants } from "./interfaces/cli";
 
 // Avoids autoconversion to number of the project name by defining that the args
 // non associated with an option ( _ ) needs to be parsed as a string. See #4606
 const argv: any = minimist(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
 
-const FRAMEWORKS: IFramework[] = [
+const FRAMEWORKS:  Framework[] = [
   {
     name: "Node命令行",
     color: yellow,
@@ -118,7 +118,7 @@ async function init() {
   const getProjectName = () =>
     targetDir === "." ? path.basename(path.resolve()) : targetDir;
 
-  let result: any = {};
+  let result: PromptResult  ;
 
   try {
     result = await prompts(
@@ -184,7 +184,7 @@ async function init() {
           message: reset("Select a variant:"),
           // @ts-ignore
           choices: (framework) =>
-            framework.variants.map((variant: Ivariants) => {
+            framework.variants.map((variant: Variants) => {
               const variantColor = variant.color;
               return {
                 title: variantColor(variant.name),
@@ -222,7 +222,7 @@ async function init() {
 
   const templateDir = path.resolve(
     path.dirname(fileURLToPath(import.meta.url)),
-    "../",
+    "../templates",
     `template-${template}`
   );
 
