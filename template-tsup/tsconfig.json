@@ -1,0 +1,13 @@
+{
+  //https://www.typescriptlang.org/tsconfig#compilerOptions
+   "extends": "@sindresorhus/tsconfig",
+   "compilerOptions": {
+    "outDir": "dist",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "resolveJsonModule": true
+   }
+}

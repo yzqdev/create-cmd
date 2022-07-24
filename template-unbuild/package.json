@@ -1,0 +1,33 @@
+{
+  "name": "tool",
+  "version": "1.0.0",
+  "author": {
+    "name": "yzqdev",
+    "url": "https://github.com/yzqdev"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.mjs",
+  "bin": {
+    "tool": "dist/index.mjs"
+  },
+  "scripts": {
+    "dev":"esno src/index.ts",
+    "start": "node dist/index.mjs",
+    "clean": "rimraf dist",
+    "build": "unbuild",
+    "lint": "prettier --write src/**/*.{ts,js}"
+  },
+  "dependencies": {
+    "@sindresorhus/tsconfig": "^3.0.1",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1",
+    "esno":"^0.16.3",
+    "@types/node": "^18.0.6",
+    "unbuild": "^0.7.6"
+  }
+}

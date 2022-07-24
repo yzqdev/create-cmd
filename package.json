@@ -1,0 +1,45 @@
+{
+  "name": "create-cmd",
+  "version": "0.1.0",
+  "description": "",
+  "main": "bin/create-cmd.mjs",
+  "files": [
+    "dist",
+    "template-*"
+  ],
+  "engines": {
+    "node": " >=16.0.0"
+  },
+  "bin": {
+    "create-cmd": "bin/create-cmd.mjs",
+    "cc": "bin/create-cmd.mjs"
+  },
+  "scripts": {
+    "dev": "esno src/index.ts",
+    "start": "node bin/create-cmd.mjs",
+    "build": "tsup",
+    "lint": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "cli",
+    "template"
+  ],
+  "author": "yzqdev",
+  "license": "MIT",
+  "dependencies": {
+    "@sindresorhus/tsconfig": "^3.0.1",
+    "kolorist": "^1.5.1",
+    "minimist": "^1.2.6",
+    "picocolors": "^1.0.0",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^18.0.6",
+    "@types/prompts": "^2.0.14",
+    "esno": "^0.16.3",
+    "prettier": "^2.7.1",
+    "tsup": "^6.1.3",
+    "typescript": "^4.7.4"
+  }
+}

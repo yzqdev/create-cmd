@@ -1,0 +1,25 @@
+{
+  "name": "tcli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "tcli": "dist/index.mjs"
+  },
+  "scripts": {
+    "build": "tsup ",
+    "build:ts": "swc src -d dist",
+    "dev": "node dist/index.js"
+  },
+  "dependencies": {
+    "@sindresorhus/tsconfig": "^3.0.1",
+    "picocolors": "^1.0.0",
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.215",
+    "@types/node": "^18.0.5",
+    "tsup": "^6.1.3"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "author": {
+    "name": "yzqdev",
+    "url": "https://github.com/yzqdev"
+  },
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "common": "dist/index.js"
+  },
+  "scripts": {
+    "dev": "esno src/index.ts",
+    "start": "node dist/index.js",
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "lint": "prettier --write src/*.{ts,js}"
+  },
+  "dependencies": {
+    "typescript": "^4.7.4"
+  },
+  "devDependencies": {
+    "esno": "^0.16.3",
+    "@types/node": "^17.0.45",
+    "@types/shelljs": "^0.8.11"
+  }
+}

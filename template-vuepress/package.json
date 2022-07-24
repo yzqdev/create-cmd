@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@vuepress/client": "next",
+    "@vuepress/plugin-search": "next",
+    "vuepress": "next"
+  }
+}
