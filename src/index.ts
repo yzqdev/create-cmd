@@ -56,11 +56,12 @@ const FRAMEWORKS: IFramework[] = [
       {
         name: "esbuild",
         display: "use esbuild",
-        color: magenta
-      }, {
+        color: magenta,
+      },
+      {
         name: "unbuild",
         display: "use unbuild",
-        color: cyan
+        color: cyan,
       },
     ],
   },
@@ -77,22 +78,28 @@ const FRAMEWORKS: IFramework[] = [
         name: "vitepress",
         display: "vitepress项目",
         color: blue,
-      },  {
+      },
+      {
         name: "vuepress",
         display: "vuepress项目",
         color: cyan,
-      }, {
+      },
+      {
         name: "hope",
         display: "hope主题项目",
         color: green,
-      },  {
+      },   {
+        name: "vite-ssg",
+        display: "vite-ssg项目",
+        color: magenta,
+      },
+      {
         name: "docsify",
         display: "docsify项目",
         color: lightRed,
       },
     ],
   },
-  
 ];
 
 const TEMPLATES = FRAMEWORKS.map(
@@ -255,7 +262,7 @@ async function init() {
       console.log("  yarn");
       console.log("  yarn dev");
       break;
-      case "pnpm":
+    case "pnpm":
       console.log("  pnpm install");
       console.log("  pnpm dev");
       break;
