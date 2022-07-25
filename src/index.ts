@@ -33,7 +33,7 @@ import {  Framework, PromptResult, Variants } from "./interfaces/cli";
 const argv: any = minimist(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
 
-const FRAMEWORKS:  Framework[] = [
+const FRAMEWORKS: Framework[] = [
   {
     name: "Node命令行",
     color: yellow,
@@ -66,14 +66,9 @@ const FRAMEWORKS:  Framework[] = [
     ],
   },
   {
-    name: "vue项目",
+    name: "ssg项目",
     color: green,
     variants: [
-      {
-        name: "vue",
-        display: "vue-ts项目",
-        color: yellow,
-      },
       {
         name: "vitepress",
         display: "vitepress项目",
@@ -88,7 +83,8 @@ const FRAMEWORKS:  Framework[] = [
         name: "hope",
         display: "hope主题项目",
         color: green,
-      },   {
+      },
+      {
         name: "vite-ssg",
         display: "vite-ssg项目",
         color: magenta,
@@ -97,6 +93,31 @@ const FRAMEWORKS:  Framework[] = [
         name: "docsify",
         display: "docsify项目",
         color: lightRed,
+      },
+    ],
+  },
+  {
+    name: "web项目",
+    color: cyan,
+    variants: [
+      {
+        name: "vue",
+        display: "vue-ts项目",
+        color: yellow,
+      },    {
+        name: "react",
+        display: "react-ts项目",
+        color: green,
+      }, 
+      
+      {
+        name: "webpack",
+        display: "webpack项目",
+        color: lightRed,
+      }, {
+        name: "parcel",
+        display: "parcel项目",
+        color: magenta,
       },
     ],
   },
