@@ -20,12 +20,16 @@ create-cmd
 
 included templates
 
-- `docsify`
 - `esbuild`
-- `hope`
+
 - `rollup`
 - `tsc`
 - `unbuild`
-- `vitepress`
-- `vue`
 - `vuepress`
+- `hope`
+- `vitepress`
+- `docsify`
+- `vue`
+- `react`
+- `webpack`
+- `parcel`

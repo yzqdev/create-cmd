@@ -20,7 +20,9 @@ export function copy(src: string, dest: string) {
  * @param {string} projectName
  */
 export function isValidPackageName(projectName: string) {
-  return /^(?:@[a-z0-9-*~][a-z0-9-*._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(projectName);
+  return /^(?:@[a-z0-9-*~][a-z0-9-*._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/.test(
+    projectName
+  );
 }
 
 /**
@@ -72,7 +74,7 @@ export function emptyDir(dir: string) {
  * @param {string | undefined} userAgent process.env.npm_config_user_agent
  * @returns object | undefined
  */
-export function pkgFromUserAgent(userAgent: string ) {
+export function pkgFromUserAgent(userAgent: string) {
   if (!userAgent) return undefined;
   const pkgSpec = userAgent.split(" ")[0];
   const pkgSpecArr = pkgSpec.split("/");

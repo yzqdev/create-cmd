@@ -7,16 +7,7 @@ import { fileURLToPath } from "url";
 import * as process from "process";
 import minimist from "minimist";
 import prompts from "prompts";
-import {
-  blue,
-  cyan,
-  green,
-  lightRed,
-  magenta,
-  red,
-  reset,
-  yellow,
-} from "kolorist";
+import { red, reset } from "kolorist";
 import {
   copy,
   emptyDir,
@@ -26,102 +17,13 @@ import {
   pkgFromUserAgent,
   toValidPackageName,
 } from "./utils";
-import {  Framework, PromptResult, Variants } from "./interfaces/cli";
+import { PromptResult, Variants } from "./interfaces/cli";
+import { FRAMEWORKS } from "./constants";
 
 // Avoids autoconversion to number of the project name by defining that the args
 // non associated with an option ( _ ) needs to be parsed as a string. See #4606
 const argv: any = minimist(process.argv.slice(2), { string: ["_"] });
 const cwd = process.cwd();
-
-const FRAMEWORKS: Framework[] = [
-  {
-    name: "Node命令行",
-    color: yellow,
-    variants: [
-      {
-        name: "ts",
-        display: "use tsc",
-        color: yellow,
-      },
-      {
-        name: "tsup",
-        display: "use tsup",
-        color: blue,
-      },
-      {
-        name: "rollup",
-        display: "use rollup",
-        color: green,
-      },
-      {
-        name: "esbuild",
-        display: "use esbuild",
-        color: magenta,
-      },
-      {
-        name: "unbuild",
-        display: "use unbuild",
-        color: cyan,
-      },
-    ],
-  },
-  {
-    name: "ssg项目",
-    color: green,
-    variants: [
-      {
-        name: "vitepress",
-        display: "vitepress项目",
-        color: blue,
-      },
-      {
-        name: "vuepress",
-        display: "vuepress项目",
-        color: cyan,
-      },
-      {
-        name: "hope",
-        display: "hope主题项目",
-        color: green,
-      },
-      {
-        name: "vite-ssg",
-        display: "vite-ssg项目",
-        color: magenta,
-      },
-      {
-        name: "docsify",
-        display: "docsify项目",
-        color: lightRed,
-      },
-    ],
-  },
-  {
-    name: "web项目",
-    color: cyan,
-    variants: [
-      {
-        name: "vue",
-        display: "vue-ts项目",
-        color: yellow,
-      },    {
-        name: "react",
-        display: "react-ts项目",
-        color: green,
-      }, 
-      
-      {
-        name: "webpack",
-        display: "webpack项目",
-        color: lightRed,
-      }, {
-        name: "parcel",
-        display: "parcel项目",
-        color: magenta,
-      },
-    ],
-  },
-];
 
 const TEMPLATES = FRAMEWORKS.map(
   (f) => (f.variants && f.variants.map((v) => v.name)) || [f.name]
@@ -139,7 +41,7 @@ async function init() {
   const getProjectName = () =>
     targetDir === "." ? path.basename(path.resolve()) : targetDir;
 
-  let result: PromptResult  ;
+  let result: PromptResult;
 
   try {
     result = await prompts(

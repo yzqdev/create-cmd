@@ -9,8 +9,8 @@ export interface Framework {
   variants: Variants[];
 }
 export interface PromptResult {
-  framework:Framework[]
-  overwrite:string
-  packageName:string
-  variant:Variants
+  framework: Framework[];
+  overwrite: string;
+  packageName: string;
+  variant: Variants;
 }
