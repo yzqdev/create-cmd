@@ -13,25 +13,29 @@
 
     <link rel="stylesheet/less" type="text/css" href="vue.less" />
     <link rel="stylesheet/less" type="text/css" href="code.less" />
-    <script src="//unpkg.com/less" type="text/javascript"></script>
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/docsify-themeable/dist/css/theme-simple-dark.css"
+      href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="https://fastly.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple-dark.css"
       title="docsify-themeable"
       disabled
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css"
+      href="https://fastly.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple.css"
       title="docsify-themeable"
       disabled
     />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/prismjs@1.28.0/themes/prism-tomorrow.min.css"
+      href="https://fastly.jsdelivr.net/npm/prismjs@1.28.0/themes/prism-tomorrow.min.css"
     />
-    <style></style>
+  
   </head>
 
   <body class="main-box">
@@ -68,6 +72,8 @@
       window.$docsify = {
         loadSidebar: "sidebar.md",
         // autoHeader: true,
+          coverpage: true,
+         homepage: false,
         loadNavbar: true,
         // basePath: "/docs/",
         subMaxLevel: 2,
@@ -95,27 +101,17 @@
         executeScript: true,
       };
     </script>
-    <script src="https://unpkg.com/docsify@4.12.2/lib/docsify.min.js"></script>
+     
+    <script src="//fastly.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
     <script src="https://unpkg.zhimg.com/jquery@3.4.1/dist/jquery.min.js"></script>
-    <!-- <script src="https://unpkg.com/prismjs@1.28.0/components/prism-core.js"></script> -->
-    <script src="https://unpkg.com/prismjs@1.28.0/components/prism-java.min.js"></script>
-    <script src="https://unpkg.com/prismjs@1.28.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    <script src="https://unpkg.com/docsify-copy-code"></script>
-    <script src="https://unpkg.com/docsify@4.12.2/lib/plugins/emoji.min.js"></script>
-    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="https://unpkg.com/docsify@4.12.2/lib/plugins/search.min.js"></script>
-
-    <script>
-      var preview = Docsify.dom.find(".demo-theme-preview");
-      var themes = Docsify.dom.findAll('[rel="stylesheet"]');
-
-      preview.onclick = function (e) {
-        var title = e.target.getAttribute("data-theme");
-
-        themes.forEach(function (theme) {
-          theme.disabled = theme.title !== title;
-        });
-      };
-    </script>
+    <!-- <script src="https://fastly.jsdelivr.net/npm/prismjs@1.28.0/components/prism-core.js"></script> -->
+    <script src="https://fastly.jsdelivr.net/npm/prismjs@1.28.0/components/prism-java.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/prismjs@1.28.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/docsify-copy-code"></script>
+    <script src="https://fastly.jsdelivr.net/npm/docsify@4.12.2/lib/plugins/emoji.min.js"></script>
+    <script src="//fastly.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://fastly.jsdelivr.net/npm/docsify@4.12.2/lib/plugins/search.min.js"></script>
+    <script src="//fastly.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+ <script src="//fastly.jsdelivr.net/npm/less" type="text/javascript"></script>
   </body>
 </html>
