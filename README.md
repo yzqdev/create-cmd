@@ -1,8 +1,18 @@
 # create-cmd
 
+<a href='https://www.npmjs.com/package/create-cmd'><img src='https://img.shields.io/npm/v/create-cmd'/></a>
+
 > Scaffolding Your  Project
 
 ## install
+
+you can use npx to run command only once
+
+```shell
+npm create-cmd
+```
+
+or install as global
 
 ```shell
 npm i -g create-cmd
@@ -33,3 +43,7 @@ included templates
 - `react`
 - `webpack`
 - `parcel`
+
+## License
+
+MIT License © 2022 [yzqdev](https://github.com/yzqdev)

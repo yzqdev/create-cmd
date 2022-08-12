@@ -13,7 +13,7 @@
     "@vuepress/client": "next",
     "vue": "3.2.37",
     "vuepress": "next",
-    "vuepress2-plugin-full-text-search": "latest",
-    "vuepress-theme-hope": "next"
+    "vuepress-theme-hope": "next",
+    "vuepress2-plugin-full-text-search": "latest"
   }
 }

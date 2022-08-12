@@ -14,7 +14,7 @@
     "tool": "dist/index.mjs"
   },
   "scripts": {
-    "dev":"esno src/index.ts",
+    "dev": "esno src/index.ts",
     "start": "node dist/index.mjs",
     "clean": "rimraf dist",
     "build": "unbuild",
@@ -25,9 +25,9 @@
     "typescript": "^4.7.4"
   },
   "devDependencies": {
+    "@types/node": "^18.7.2",
+    "esno": "^0.16.3",
     "prettier": "2.7.1",
-    "esno":"^0.16.3",
-    "@types/node": "^18.0.6",
-    "unbuild": "^0.7.6"
+    "unbuild": "^0.8.8"
   }
 }

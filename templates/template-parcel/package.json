@@ -1,7 +1,6 @@
 {
   "name": "demo-parcel",
   "version": "1.0.0",
-  
   "main": "dist/main.js",
   "source": "src/index.html",
   "scripts": {
