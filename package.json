@@ -1,6 +1,6 @@
 {
   "name": "create-cmd",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Scaffolding Your  Project",
   "main": "bin/create-cmd.mjs",
   "author": {
@@ -41,11 +41,11 @@
   },
   "devDependencies": {
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.6.1",
+    "@types/node": "^18.7.2",
     "@types/prompts": "^2.0.14",
     "esno": "^0.16.3",
     "prettier": "^2.7.1",
-    "tsup": "^6.2.0",
+    "tsup": "^6.2.2",
     "typescript": "^4.7.4"
   }
 }
