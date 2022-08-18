@@ -1,6 +1,6 @@
 {
   "name": "create-cmd",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Scaffolding Your  Project",
   "main": "bin/create-cmd.mjs",
   "author": {

@@ -1,5 +1,13 @@
 import { Framework } from "./interfaces/cli";
-import { blue, cyan, green, lightRed, magenta, yellow } from "kolorist";
+import {
+  blue,
+  cyan,
+  green,
+  lightRed,
+  magenta,
+  yellow,
+  lightMagenta,
+} from "kolorist";
 export const FRAMEWORKS: Framework[] = [
   {
     name: "Node命令行",
@@ -69,8 +77,13 @@ export const FRAMEWORKS: Framework[] = [
     variants: [
       {
         name: "vue",
-        display: "vue-ts项目",
+        display: "vue-ts项目(element-plus)",
         color: yellow,
+      },
+      {
+        name: "vant",
+        display: "vue-ts项目(vant)",
+        color: lightMagenta,
       },
       {
         name: "react",
