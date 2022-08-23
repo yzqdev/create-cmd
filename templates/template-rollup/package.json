@@ -31,10 +31,10 @@
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-typescript": "^8.3.4",
-    "@types/inquirer": "8.2.2",
-    "@types/node": "^18.7.2",
+    "@types/inquirer": "^9.0.1",
+    "@types/node": "^18.7.11",
     "prettier": "^2.7.1",
     "rimraf": "3.0.2",
-    "rollup": "^2.77.3"
+    "rollup": "^2.78.1"
   }
 }

@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@types/minimist": "^1.2.2",
-    "@types/node": "^18.7.2",
+    "@types/node": "^18.7.11",
     "@types/prompts": "^2.0.14",
     "esno": "^0.16.3",
     "prettier": "^2.7.1",
