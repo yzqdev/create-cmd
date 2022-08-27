@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@sindresorhus/tsconfig': ^3.0.1
   '@types/minimist': ^1.2.2
-  '@types/node': ^18.7.2
+  '@types/node': ^18.7.13
   '@types/prompts': ^2.0.14
   esno: ^0.16.3
   kolorist: ^1.5.1
@@ -11,8 +11,8 @@ specifiers:
   picocolors: ^1.0.0
   prettier: ^2.7.1
   prompts: ^2.4.2
-  tsup: ^6.2.2
-  typescript: ^4.7.4
+  tsup: ^6.2.3
+  typescript: ^4.8.2
 
 dependencies:
   '@sindresorhus/tsconfig': 3.0.1
@@ -23,12 +23,12 @@ dependencies:
 
 devDependencies:
   '@types/minimist': 1.2.2
-  '@types/node': 18.7.2
+  '@types/node': 18.7.13
   '@types/prompts': 2.0.14
   esno: 0.16.3
   prettier: 2.7.1
-  tsup: 6.2.2_typescript@4.7.4
-  typescript: 4.7.4
+  tsup: 6.2.3_typescript@4.8.2
+  typescript: 4.8.2
 
 packages:
 
@@ -92,14 +92,14 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.7.2:
-    resolution: {integrity: sha512-ce7MIiaYWCFv6A83oEultwhBXb22fxwNOQf5DIxWA4WXvDQ7K+L0fbWl/YOfCzlR5B/uFkSnVBhPcOfOECcWvA==}
+  /@types/node/18.7.13:
+    resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==}
     dev: true
 
   /@types/prompts/2.0.14:
     resolution: {integrity: sha512-HZBd99fKxRWpYCErtm2/yxUZv6/PBI9J7N4TNFffl5JbrYMHBwF25DjQGTW3b3jmXq+9P6/8fCIb2ee57BFfYA==}
     dependencies:
-      '@types/node': 18.7.2
+      '@types/node': 18.7.13
     dev: true
 
   /any-promise/1.3.0:
@@ -146,8 +146,8 @@ packages:
     resolution: {integrity: sha512-E+XQCRwSbaaiChtv6k6Dwgc+bx+Bs6vuKJHHl5kox/BaKbhiXzqQOwK4cO22yElGp2OCmjwVhT3HmxgyPGnJfQ==}
     dev: true
 
-  /bundle-require/3.0.4_esbuild@0.15.2:
-    resolution: {integrity: sha512-VXG6epB1yrLAvWVQpl92qF347/UXmncQj7J3U8kZEbdVZ1ZkQyr4hYeL/9RvcE8vVVdp53dY78Fd/3pqfRqI1A==}
+  /bundle-require/3.1.0_esbuild@0.15.2:
+    resolution: {integrity: sha512-IIXtAO7fKcwPHNPt9kY/WNVJqy7NDy6YqJvv6ENH0TOZoJ+yjpEsn1w40WKZbR2ibfu5g1rfgJTvmFHpm5aOMA==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     peerDependencies:
       esbuild: '>=0.13'
@@ -1083,8 +1083,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tsup/6.2.2_typescript@4.7.4:
-    resolution: {integrity: sha512-vJ9IAdif4GKAz2XMZzjX1hNqhBezJWXjm0qeQEoI7y//a64cxgCF8178eTMV4jBu7YNKnfAPpPSuyXW4mN+9rA==}
+  /tsup/6.2.3_typescript@4.8.2:
+    resolution: {integrity: sha512-J5Pu2Dx0E1wlpIEsVFv9ryzP1pZ1OYsJ2cBHZ7GrKteytNdzaSz5hmLX7/nAxtypq+jVkVvA79d7S83ETgHQ5w==}
     engines: {node: '>=14'}
     hasBin: true
     peerDependencies:
@@ -1099,7 +1099,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      bundle-require: 3.0.4_esbuild@0.15.2
+      bundle-require: 3.1.0_esbuild@0.15.2
       cac: 6.7.12
       chokidar: 3.5.3
       debug: 4.3.4
@@ -1113,7 +1113,7 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.24.0
       tree-kill: 1.2.2
-      typescript: 4.7.4
+      typescript: 4.8.2
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -1130,8 +1130,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /typescript/4.7.4:
-    resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
+  /typescript/4.8.2:
+    resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true

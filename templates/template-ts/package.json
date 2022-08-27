@@ -20,10 +20,10 @@
     "lint": "prettier --write src/*.{ts,js}"
   },
   "dependencies": {
-    "typescript": "^4.7.4"
+    "typescript": "^4.8.2"
   },
   "devDependencies": {
-    "@types/node": "^18.7.11",
+    "@types/node": "^18.7.13",
     "@types/shelljs": "^0.8.11",
     "esno": "^0.16.3"
   }
