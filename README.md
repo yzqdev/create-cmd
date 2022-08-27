@@ -38,8 +38,10 @@ included templates
 - `vuepress`
 - `hope`
 - `vitepress`
+- `vite-ssg`
 - `docsify`
 - `vue`
+- `vant`
 - `react`
 - `webpack`
 - `parcel`
