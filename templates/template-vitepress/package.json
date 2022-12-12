@@ -5,9 +5,9 @@
     "serve": "vitepress serve docs"
   },
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.12"
+    "vitepress": "1.0.0-alpha.31"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.45"
   }
 }

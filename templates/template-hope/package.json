@@ -11,7 +11,7 @@
   "devDependencies": {
     "@vuepress/cli": "next",
     "@vuepress/client": "next",
-    "vue": "3.2.37",
+    "vue": "3.2.45",
     "vuepress": "next",
     "vuepress-theme-hope": "next",
     "vuepress2-plugin-full-text-search": "latest"

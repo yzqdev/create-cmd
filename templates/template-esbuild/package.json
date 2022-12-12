@@ -12,14 +12,14 @@
     "build": "zx ./scripts/build.mjs"
   },
   "dependencies": {
-    "esbuild": "^0.15.5",
+    "esbuild": "^0.16.4",
     "js-yaml": "^4.1.0",
-    "prettier": "^2.7.1",
-    "zx": "^7.0.8"
+    "prettier": "^2.8.1",
+    "zx": "^7.1.1"
   },
   "devDependencies": {
-    "@types/node": "^18.7.13",
-    "cac": "^6.7.12",
-    "typescript": "^4.8.2"
+    "@types/node": "^18.11.13",
+    "cac": "^6.7.14",
+    "typescript": "^4.9.4"
   }
 }
